@@ -1,0 +1,100 @@
+#encabezado{
+	text-align: center;
+	font-size: 30px;
+	color:white;
+	text-shadow: 2px 2px 1px #000000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 10%;
+	width: 100%;
+	text-align: center;
+	background-color: #212F3C;
+	padding-top: 1%;
+	
+}
+#menulateral{
+	position: fixed;
+	top: 10%;
+	left: 0;
+	height: 90%;
+	width: 15%;
+	background-color: lightgreen;
+	padding-left: 0px;
+}
+#contenido{
+	position: fixed;
+	top: 10%;
+	left: 15%;
+	height: 90%;
+	width: 85%;
+	background-color: lightyellow;
+}
+#targetacciones{
+	height: 100%;
+	width: 100%;
+}
+#ligame{
+	display: block;
+	border: 1px solid #999;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	background-color: #283747;
+	color: white;
+	
+}
+#ligatec{
+	display: block;
+	border: 1px solid #999;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	background-color: #2e4053;
+	color: white;
+}
+#ligacinves{
+	display: block;
+	border: 1px solid #999;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	background-color: #34495e;
+	color: white;
+}
+#ligaproyectos{
+	display: block;
+	border: 1px solid #999;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	background-color: #8ba9c0;
+	color: white;
+}
+#ligaprofesional{
+	display: block;
+	border: 1px solid #999;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	background-color: #5d6d7e;
+	color: white;
+}
+#elementolista{
+	display: block;
+	height: 20%;
+	list-style: none;
+	border: 1px solid #d6dbdf;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-family: garamond;
+}
+#lista{
+	padding: 0;
+	margin: 0;
+	
+}
+#Icono{
+	width: 25%;
+}

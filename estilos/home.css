@@ -1,0 +1,29 @@
+.texto{
+	position: relative;
+	font-size: 20px;
+	text-align: justify;
+	top: 5%;
+	width: 90%;
+	margin-left: 15px;
+	margin-right: 1px;
+	margin-bottom: 60px;
+}
+#about_me_side{
+	font-size: 20px;
+	font-weight: normal;
+}
+#fotomia{
+	width: 200px;
+	margin: 20px;
+	margin-top: 0px;
+	float: right;
+}
+.Primertitulo{
+	left: 5%;	
+}
+#Horizontalprimero{
+	
+}
+#reseting{
+	clear: both;
+}

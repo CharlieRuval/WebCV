@@ -1,0 +1,8 @@
+body{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.Proyectos{
+	border: 1px dashed black;
+}
