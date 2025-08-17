@@ -98,3 +98,6 @@
 #Icono{
 	width: 25%;
 }
+.lat_hover:hover{
+	background: black;
+}

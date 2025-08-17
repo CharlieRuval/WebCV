@@ -1,0 +1,72 @@
+.return{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 1px;
+	bottom: 0px;
+	width: 150px;
+	/*border: solid black;*/
+	border-radius: 15px;
+	font-size: 20px;
+}
+.imagen_retorno{
+	width: 50%;
+}
+.Liga_retorno{
+	display:flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 20px;
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
+}
+.Liga_retorno:link,
+.Liga_retorno:visited{
+    color: black;          /* o el color que quieras */
+    text-decoration: none; /* sin subrayado */
+}
+.Multimedia{
+	/*display:flex;*/
+	width: 20%;
+	/*border: solid black;*/
+	margin-left:2%;
+	margin-right:10%;
+	float:right;
+}
+.Videos_Pj{
+	/*width: 20%;*/
+	/*margin: 20px;*/
+	margin-top: 10px;
+	/*float: right;*/
+	/*border-radius: 10px;*/
+	/*border:  6px solid #212F3C;*/
+	background: linear-gradient(135deg, #fdfaf0, #e0dfd1);
+	box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+.Videos_Pj video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+.Texto{
+	font-size: 20px;
+	text-align: justify;
+	width: 90%;
+	margin-left: 15px;
+	margin-right: 1px;
+	margin-bottom: 15px;
+}
+#Vision{
+	/*float:right;*/
+	top:10%;
+	width: 100%;
+	
+}
+#Adj_fine{
+	width: 100%;
+	border-radius: 10px;
+	margin-top: 10px;
+}

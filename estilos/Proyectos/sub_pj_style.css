@@ -1,0 +1,10 @@
+.return{
+	position: fixed;
+	right: 1px;
+	bottom: 0px;
+	width: 10%;
+	border: solid black;
+}
+.imagen_retorno{
+	width: 100%;
+}
