@@ -6,6 +6,7 @@
 	right: 1px;
 	bottom: 0px;
 	width: 150px;
+	background-color: lightyellow;
 	/*border: solid black;*/
 	border-radius: 15px;
 	font-size: 20px;
@@ -20,7 +21,7 @@
 	font-size: 20px;
 	height: 100%;
 	width: 100%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 .Liga_retorno:link,
 .Liga_retorno:visited{
