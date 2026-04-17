@@ -1,51 +1,144 @@
-#nombreescuelas{
-	top: 0px;
-	left: 0px;
-	position: sticky;
-	display: flex;
-	width: 100%;
-	font-size: 40px;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	background-color: lightyellow;
-	font-family: TimesNewRoman;
-	height: 15%;
-	/*border: 1px solid #999;*/
+
+:root {
+  --page-bg: #f3f6fb;
+  --card: #ffffff;
+  --stroke: #d8e2f0;
+  --text: #172031;
+  --muted: #5f6f88;
+  --accent: #0f7ac2;
+  --shadow: 0 22px 48px rgba(18, 38, 63, 0.08);
 }
-#infoizq{
-	padding-top: 10px;
-	font-size: 20px;
-	/*margin-top: 10%;*/
-	top: 5%;
-	margin-left: 2%;
-	/*margin-right: 1%;*/
-	width: 94%;
-	text-align: justify;
+
+* {
+  box-sizing: border-box;
 }
-#listadematerias{
-	width: 100%;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-#materia{
-	width: 40%;
-	font-size: 20px;
+
+body {
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(99, 210, 255, 0.12), transparent 25%),
+    linear-gradient(180deg, #f8fbff 0%, var(--page-bg) 100%);
+  color: var(--text);
+  padding: 28px;
 }
-#calificacion{
-	width: 10%;
-	text-align: center;
-	font-size: 20px;
+
+#nombreescuelas {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 88px;
+  padding: 18px 24px;
+  margin-bottom: 22px;
+  text-align: center;
+  font-size: clamp(1.5rem, 2.7vw, 2.2rem);
+  font-weight: 700;
+  color: #101a2c;
+  border: 1px solid var(--stroke);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: var(--shadow);
 }
+
+#infoizq {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid var(--stroke);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+  font-size: 1rem;
+  line-height: 1.78;
+  text-align: justify;
+}
+
+#listadematerias {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 22px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+#listadematerias th,
+#listadematerias td,
+#materia,
+#calificacion {
+  border: 1px solid #dce5f1;
+  padding: 12px 14px;
+  font-size: 0.96rem;
+  vertical-align: top;
+}
+
+#listadematerias tr:first-child td,
+#listadematerias thead th {
+  background: #eef5fc;
+  font-weight: 700;
+}
+
+#materia {
+  width: 40%;
+}
+
+#calificacion {
+  width: 10%;
+  text-align: center;
+  white-space: nowrap;
+}
+
 .subjectinfo {
   display: grid;
-  grid-template-columns: 1fr auto;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.subjectinfo span:last-child{
-	white-space: nowrap;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: start;
 }
 
 .emoji {
-  margin-left: 10px;
+  margin-left: 0;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 18px;
+  }
+
+  #nombreescuelas,
+  #infoizq {
+    padding: 18px;
+  }
+
+  #listadematerias,
+  #listadematerias tbody,
+  #listadematerias tr,
+  #listadematerias td,
+  #listadematerias thead,
+  #listadematerias th {
+    display: block;
+    width: 100%;
+  }
+
+  #listadematerias thead,
+  #listadematerias tr:first-child {
+    display: none;
+  }
+
+  #listadematerias td {
+    border-bottom: 0;
+  }
+
+  #listadematerias tr {
+    border: 1px solid #dce5f1;
+    border-radius: 18px;
+    background: #ffffff;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
 }

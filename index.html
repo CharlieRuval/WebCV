@@ -1,42 +1,102 @@
-<html>
-	<head>
-		<title>M. Sc. Carlos Ruvalcaba</title>
-		<link rel="stylesheet" href="estilos/mainstyle.css">
-	</head>
-	<body>
-		<div id="disclaimer">
-			All the code and design used in this page was generated manually by me using Notepad++ and Textastic as IDE
-		</div>
-		<div id="encabezado">
-			M. Sc. Carlos  Ruvalcaba
-		</div>
-		<div id="menulateral">
-			<ul id="lista">
-				<li id="elementolista">
-					<a href="submenus/home.htm" target="acciones" id="ligame" class="lat_hover">About<br>me<br>
-					<img src="Imagenes/Menulateral/About_me2.png" id="Icono"></a>
-				</li>
-				<li id="elementolista">
-					<a href="submenus/tec.htm" target="acciones" id="ligatec">Bachelor<br>degree<br>
-					<img src="Imagenes/Menulateral/Tec.png" id="Icono"></a>
-				</li>
-				<li id="elementolista">
-					<a href="submenus/cinves.htm" target="acciones" id="ligacinves">Master<br>degree<br>
-					<img src="Imagenes/Menulateral/CINVES.png" id="Icono"></a>
-				</li>
-				<li id="elementolista">
-					<a href="submenus/profesional_experience.htm" target="acciones" id="ligaprofesional">Professional<br>experience<br>
-					<img src="Imagenes/Menulateral/Professional.png" id="Icono"></a>
-				</li>
-				<li id="elementolista">
-					<a href="submenus/projects.htm" target="acciones" id="ligaproyectos">Projects<br>
-					<img src="Imagenes/Menulateral/Proyectos.png" id="Icono"></a>
-				</li>
-			</ul>
-		</div>
-		<div id="contenido">
-			<iframe src="submenus/home.htm" name="acciones" id="targetacciones">
-			</iframe>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of M. Sc. Carlos Ruvalcaba, focused on automation, control systems, intelligent engineering, and data driven development.">
+  <title>M. Sc. Carlos Ruvalcaba</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-bg app-bg-1"></div>
+  <div class="app-bg app-bg-2"></div>
+  <div class="app-grid"></div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-brand">
+        <!--<p class="topbar-kicker">Engineering portfolio</p>-->
+        <div>
+          <h1>M. Sc. Carlos Ruvalcaba</h1>
+          <p>Automation, control systems, data workflows, and applied engineering.</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sidebarNav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="app-layout">
+      <aside class="sidebar sidebar-menu-only" id="sidebarNav">
+        <div class="sidebar-menu-label">
+          <p class="profile-eyebrow">Navigation</p>
+        </div>
+
+        <nav class="nav-list" aria-label="Main sections">
+          <a href="submenus/home.htm" target="acciones" class="nav-item is-active" data-group="about" data-title="About me" data-subtitle="Profile, interests, and a general overview of my academic and professional direction.">
+            <span class="nav-copy">
+              <strong>About me</strong>
+              <small>Profile, interests, and overview</small>
+            </span>
+            <span class="nav-icon-wrap">
+              <img src="Imagenes/Menulateral/About_me2.png" alt="About me icon" class="nav-icon">
+            </span>
+          </a>
+
+          <a href="submenus/tec.htm" target="acciones" class="nav-item" data-group="bachelor" data-title="Bachelor degree" data-subtitle="Biomedical engineering education, core training, and academic record.">
+            <span class="nav-copy">
+              <strong>Bachelor degree</strong>
+              <small>Biomedical engineering background</small>
+            </span>
+            <span class="nav-icon-wrap">
+              <img src="Imagenes/Menulateral/Tec.png" alt="Tecnológico de Monterrey logo" class="nav-icon">
+            </span>
+          </a>
+
+          <a href="submenus/cinves.htm" target="acciones" class="nav-item" data-group="master" data-title="Master degree" data-subtitle="Advanced studies in electrical engineering, control systems, and mathematical foundations.">
+            <span class="nav-copy">
+              <strong>Master degree</strong>
+              <small>Electrical engineering and control</small>
+            </span>
+            <span class="nav-icon-wrap">
+              <img src="Imagenes/Menulateral/CINVES.png" alt="CINVESTAV logo" class="nav-icon">
+            </span>
+          </a>
+
+          <a href="submenus/profesional_experience.htm" target="acciones" class="nav-item" data-group="experience" data-title="Professional experience" data-subtitle="Teaching, automation, and data oriented professional experience.">
+            <span class="nav-copy">
+              <strong>Professional experience</strong>
+              <small>Teaching, automation, and data</small>
+            </span>
+            <span class="nav-icon-wrap">
+              <img src="Imagenes/Menulateral/Professional.png" alt="Professional experience icon" class="nav-icon">
+            </span>
+          </a>
+
+          <a href="submenus/projects.htm" target="acciones" class="nav-item" data-group="projects" data-title="Projects" data-subtitle="Selected technical projects in automation, simulation, biomedical design, and applied software.">
+            <span class="nav-copy">
+              <strong>Projects</strong>
+              <small>Selected work and implementations</small>
+            </span>
+            <span class="nav-icon-wrap">
+              <img src="Imagenes/Menulateral/Proyectos.png" alt="Projects icon" class="nav-icon">
+            </span>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="content-panel content-panel-no-header">
+        <section class="iframe-frame iframe-frame-full">
+          <div class="iframe-loader" id="iframeLoader">Loading section...</div>
+          <iframe src="submenus/home.htm" name="acciones" id="targetacciones" title="Portfolio content"></iframe>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
